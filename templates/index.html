@@ -32,10 +32,11 @@
 <!--   <link rel="stylesheet" href="css/concise.css">
   <link rel="stylesheet" href="css/normalize.css">
  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- <link href="static/css/normalize.css" rel="stylesheet"></link>
 
-<link href="static/css/normalize.css" rel="stylesheet"></link>
-
-<link href="static/css/skeleton.css" rel="stylesheet"></link>
+<link href="static/css/skeleton.css" rel="stylesheet"></link> -->
 
 
   <!-- Favicon
@@ -140,7 +141,7 @@
 
 
   <span ng-hide="editing" ng-click="editing = true">
-    <H1>{{name}}</H1> <button ng-click="editing = true">Edit</button>
+    <H1>{{name}}</H1> <button class="btn btn-default" ng-click="editing = true">Edit</button>
   </span>
   <span ng-show="editing">
     <input type="text" ng-model="name"> 

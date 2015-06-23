@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.debug = True
 
 
-@app.route("/app")
+@app.route("/")
 def app_endpoint():
     return make_response(open('templates/index.html').read())
 
