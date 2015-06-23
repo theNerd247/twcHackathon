@@ -9,9 +9,9 @@ angular.module('AngularFlask', ['angularFlaskServices', 'ngRoute'])
 		// 	controller: 'snip'
 			
 		// })
-		.when('ap/part', {
+		.when('/ap/part', {
 			templateUrl: 'static/partials/part.html',
-			//controller: 'snip'
+			controller: 'snip'
 		})
 		// .when('/post', {
 		// 	templateUrl: 'static/partials/post-list.html',
@@ -31,6 +31,6 @@ angular.module('AngularFlask', ['angularFlaskServices', 'ngRoute'])
 		})
 		;
 
-		//$locationProvider.html5Mode(true);
+		$locationProvider.html5Mode(true);
 	}])
 ;
