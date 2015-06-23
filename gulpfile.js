@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify')
 var ngAnnotate = require('gulp-ng-annotate')
  
 gulp.task('js', function () {
+  
   gulp.src(['static/lib/angular/angular.min.js', 
   	'static/lib/angular/angular-route.js', 
   	'static/lib/angular/angular.min.js', 'static/**/*.js'])
