@@ -27,9 +27,7 @@ angular.module('AngularFlask', ['angularFlaskServices', 'ngRoute'])
 					// })
 					.otherwise({
 						redirectTo: '/'
-					})
-					;
+					});
 
 					$locationProvider.html5Mode(true);
-				}])
-				;
+				}]);

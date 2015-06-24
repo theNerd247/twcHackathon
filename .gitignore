@@ -1,5 +1,5 @@
 # ignore temp vim files
 *.sw*
 node_modules/*
-
 models.pyc
+static/app.js

@@ -25,8 +25,6 @@ def get_notes():
         notes.append(n.__dict__)
         return json.dumps(notes)
 
-
-
 @app.route("/getPlace")
 def get_place():
 	pass
@@ -35,12 +33,8 @@ def get_place():
 def get_alerts_for_user(user_id):
 	pass
 
-
-
-
 if __name__ == "__main__":
     app.run()
-
 
 connection_string = "mongodb://localhost"
 connection = pymongo.MongoClient(connection_string)
