@@ -25,6 +25,19 @@ def get_notes():
         notes.append(n.__dict__)
         return json.dumps(notes)
 
+
+
+@app.route("/getPlace")
+def get_place():
+	pass
+
+@app.route("/getAlerts/<user_id>")
+def get_alerts_for_user(user_id):
+	pass
+
+
+
+
 if __name__ == "__main__":
     app.run()
 

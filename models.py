@@ -19,4 +19,9 @@ class snippet(object):
 		self.title = "title me"
 		self.files = ["", "file1"]
 		self.code = "args, yadayadayada, put some code here."
-		
+
+
+
+
+def TWC_ICON(Enum):
+	pass
