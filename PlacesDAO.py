@@ -15,10 +15,10 @@ class PlacesDAO:
                     'username': username
                 }
 
-                placeDict.update(place.__dict__())
+                placeDict.update(place.__dict__)
 
 	        try:
-	            self.db.places.insert(user, safe=True)
+	            self.db.places.insert(placeDict)
 	        except pymongo.errors.OperationFailure:
 	            print "oops, mongo error"
 	            return False
@@ -28,7 +28,7 @@ class PlacesDAO:
 	
 	        return True
 
-        def getPlaces(self, username)
+        def getPlaces(self, username):
             try:
                 places = self.db.places.find({'username': username});
                 return places

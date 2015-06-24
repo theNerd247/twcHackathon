@@ -24,7 +24,7 @@ app.controller('placesController',['$scope','$http','$parentScope', function($sc
 	$http.get(uname).success(function(data, status, headers, config) {
 		// this callback will be called asynchronously
 		// when the response is available
-		$scope.titles = data;
+		$scope.places = data;
 	}).
 		error(function(data, status, headers, config) {
 		// called asynchronously if an error occurs

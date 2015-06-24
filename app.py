@@ -1,8 +1,11 @@
 from flask import Flask, make_response
+from bson.json_util import dumps
 from models import note
 import json
 import pymongo
 import UserDAO
+import PlacesDAO
+import Place
 
 app = Flask(__name__)
 app.debug = True
@@ -11,8 +14,18 @@ connection_string = "mongodb://localhost"
 connection = pymongo.MongoClient(connection_string)
 database = connection.blog
 
-users = userDAO.UserDAO(database)
+users = UserDAO.UserDAO(database)
 places = PlacesDAO.PlacesDAO(database)
+
+# send in some test data
+#pl = Place.Place();
+#pl.name = "Weather Channell Headquarters"
+#pl.address = "100 South Marietta Pkwy"
+#pl.coordinates = [(1,2)]
+#pl.id = "foo"
+#pl.icon = "nowhere"
+#places.addPlace("bob",pl)
+#print pl.__dict__
 
 @app.route("/")
 def app_endpoint():
@@ -34,7 +47,7 @@ def get_notes():
 @app.route("/getPlace/<username>")
 def get_place(username):
     print "fetching places for " + username
-    return places.getPlaces(username);
+    return dumps(places.getPlaces(username));
 
 @app.route("/getAlerts/<user_id>")
 def get_alerts_for_user(user_id):
