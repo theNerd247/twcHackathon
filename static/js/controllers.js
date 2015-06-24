@@ -32,7 +32,7 @@ app.controller('placesController',['$scope','$http','$parentScope', function($sc
 	});
 
 	//set the places data
-	$scope.places = 
+	$scope.places = "";
 }]);
 
 	// function IndexController($scope) {
