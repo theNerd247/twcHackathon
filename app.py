@@ -1,6 +1,8 @@
 from flask import Flask, make_response
 from models import note
 import json
+import pymongo
+import UserDAO
 
 app = Flask(__name__)
 app.debug = True
@@ -12,16 +14,23 @@ def app_endpoint():
 
 @app.route("/notes")
 def get_notes():
-	notes = []
-	list = [
+    notes = []
+    list = [
         {'a': 1, 'b': 2},
         {'a': 5, 'b': 10}
-       ]
-	for x in xrange(0,10):
-		n = note()
-		n.title = "Title_" + str(x)
-		notes.append(n.__dict__)
-	return json.dumps(notes)
+    ]
+    for x in xrange(0,10):
+        n = note()
+        n.title = "Title_" + str(x)
+        notes.append(n.__dict__)
+        return json.dumps(notes)
 
 if __name__ == "__main__":
     app.run()
+
+
+connection_string = "mongodb://localhost"
+connection = pymongo.MongoClient(connection_string)
+database = connection.blog
+
+users = userDAO.UserDAO(database

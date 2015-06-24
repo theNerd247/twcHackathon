@@ -1,0 +1,14 @@
+.circle
+{
+	border-radius: 50%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	text-align: center;
+}
+
+.right-border
+{
+	border-right: 1px #ccc solid;
+}
+

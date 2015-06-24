@@ -6,17 +6,22 @@ var app = angular.module('AngularFlask').controller('snip', ['$scope', '$http', 
 	$scope.note_list = ["asdf", "note", "title"];
 	$scope.titles = null;
 	$http.get('/notes').success(function(data, status, headers, config) {
-    // this callback will be called asynchronously
-    // when the response is available
-    $scope.titles = data;
-  }).
-  error(function(data, status, headers, config) {
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
-  });
+		// this callback will be called asynchronously
+		// when the response is available
+		$scope.titles = data;
+	}).
+		error(function(data, status, headers, config) {
+		// called asynchronously if an error occurs
+		// or server returns response with an error status.
+	});
 
-  $scope.getNote = function(argument) {
-  	alert(argument);  };
+	$scope.getNote = function(argument) {
+		alert(argument);  };
+}]);
+
+app.controller('placesController',['$scope', function($scope){
+	//fetch the places data
+	$scope.places = 
 }]);
 
 // function IndexController($scope) {
@@ -26,7 +31,7 @@ var app = angular.module('AngularFlask').controller('snip', ['$scope', '$http', 
 // }
 
 // function AboutController($scope) {
-	
+
 // }
 
 // function PostListController($scope, Post) {
