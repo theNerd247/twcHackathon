@@ -21,7 +21,7 @@ var app = angular.module('AngularFlask').controller('snip', ['$scope', '$http', 
 
 app.controller('placesController',['$scope', function($scope){
 	//fetch the places data
-	$scope.places = 
+	$scope.places = "";
 }]);
 
 // function IndexController($scope) {

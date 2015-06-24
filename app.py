@@ -46,4 +46,4 @@ connection_string = "mongodb://localhost"
 connection = pymongo.MongoClient(connection_string)
 database = connection.blog
 
-users = userDAO.UserDAO(database
+users = userDAO.UserDAO(database)
