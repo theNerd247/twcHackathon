@@ -1,0 +1,34 @@
+<!-- the horizontal scrolling row of hourly weather info -->
+<div class="row" >
+	<!-- ******************** Hourly Weather Info ******************** -->
+	<div ng-repeat="weatherHour in currentPlace.weatherHours">
+		<div class='col-xs-3'>
+			<div class='center-text'>
+				<strong>{{weatherHour.hour}}</strong><br/>
+				<img class="img-responsive" src="{{weatherHour.iconPath}}"/>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Hourly Weather Info -->
+<!-- ******************** Alert Information ******************** -->
+<div class='row'>
+	<!-- the alert information if any -->
+	<h2>Alert: {{currentPlace.alertInfo.short}}</h2>
+	<p>
+		{{currentPlace.alertInfo.long}}
+	</p>
+	<!-- the webcam -->
+</div>
+<!-- /Alert Information -->
+<!-- ******************** Event Planner ******************** -->
+<!-- /Event Planner -->
+<!-- ******************** Weather Cam Links ******************** -->
+<div class='row'>
+	<div ng-repeat="camLink in currentPlace.weatherCamLinks">
+		<ul>
+			<li><a href="{{camLink.href}}">{{camLink.linkText}}</a></li>
+		</ul>
+	</div>
+</div>
+<!-- /Weather Cam Links -->

@@ -1,9 +1,9 @@
 <div class='row'>
-	<div class='col-md-12'>
-		<div ng-controller="placesController">
+	<div ng-controller="placesController">
+		<div class='col-md-12'>
 			<!-- place item in the places menu --!>
 			<div ng-repeat="place in places">
-				<div class="row bottom-border">
+				<div class="row bottom-border" ng-click="displayDetails($index)">
 					<!-- place id -->
 					<div class='col-xs-1'>
 						<div class='label label-primary'>
@@ -20,11 +20,31 @@
 					</div>
 					<!-- end place name -->
 					<div class='col-xs-4'>
-						<img class='img-responsive' src="{{place.iconPath}}"/>
+						<img class='img-responsive' src="{{place.weatherHours[place.currentHour].iconPath}}"/>
 					</div>
 					<!-- end place name -->
 				</div>
 			</div>
-			</div>
 		</div>
+		<!-- ******************** Details Panel ******************** -->
+		<div class="modal fade" id="detailsModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">{{currentPlace.name}}</h4>
+					</div>
+					<div class="modal-body">
+						<div ng-include="'static/partials/places/details.html'"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->		<!-- /Details Panel -->
+	</div>
 </div>
+

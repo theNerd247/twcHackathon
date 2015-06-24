@@ -1,3 +1,5 @@
+import AlertInfo
+
 class Place:
     """The Places object representing data for a given location"""
 
@@ -7,5 +9,5 @@ class Place:
         self.name = ""
         self.address = ""
         self.coordinates = []
-        self.id = ""
-        self.icon = ""
+        self.weatherHours = []
+        self.currentHour = 0

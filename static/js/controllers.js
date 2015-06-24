@@ -20,11 +20,13 @@ var app = angular.module('AngularFlask').controller('snip', ['$scope', '$http', 
 }]);
 
 app.controller('placesController',['$scope','$http',function($scope,$http){
-	var uname = '/getPlace/bob'; //+ $parentScope.username
+	var uname = '/samples'; //+ $parentScope.username
 	$http.get(uname).success(function(data, status, headers, config) {
 		// this callback will be called asynchronously
 		// when the response is available
 		$scope.places = data;
+		//console.log($scope.places);
+		$scope.currentPlace = $scope.places[0];
 	}).
 		error(function(data, status, headers, config) {
 		// called asynchronously if an error occurs
@@ -33,6 +35,19 @@ app.controller('placesController',['$scope','$http',function($scope,$http){
 
 	//set the places data
 	$scope.places = "";
+
+	//function to handle showing the details panel when a place has been clicked
+	$scope.displayDetails = function(index)
+	{
+		if(typeof index == 'undefined' || index < 0  || index >= $scope.places.length)
+		{
+			$scope.showDetails = false;
+			$('#detailsModal').modal('hide');
+			return;
+		}
+		$scope.currentPlace = $scope.places[index];
+		$('#detailsModal').modal('show');
+	};
 }]);
 
 	// function IndexController($scope) {

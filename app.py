@@ -6,6 +6,9 @@ import pymongo
 import UserDAO
 import PlacesDAO
 import Place
+import WeatherHour
+import AlertInfo
+import WeatherCamLink
 
 app = Flask(__name__)
 app.debug = True
@@ -18,14 +21,9 @@ users = UserDAO.UserDAO(database)
 places = PlacesDAO.PlacesDAO(database)
 
 # send in some test data
-pl = Place.Place();
-pl.name = "Weather Channell Headquarters"
-pl.address = "100 South Marietta Pkwy"
-pl.coordinates = [(1,2)]
-pl.id = "foo"
-pl.iconPath = "static/img/twc_icons/30.png"
-places.addPlace("bob",pl)
-print pl.__dict__
+@app.route("/samples")
+def addSamplePlaces():
+    return make_response(open('tstData.json').read())
 
 @app.route("/")
 def app_endpoint():
@@ -46,7 +44,6 @@ def get_notes():
 
 @app.route("/getPlace/<username>")
 def get_place(username):
-    print "fetching places for " + username
     return dumps(places.getPlaces(username));
 
 @app.route("/getAlerts/<user_id>")
@@ -55,5 +52,3 @@ def get_alerts_for_user(user_id):
 
 if __name__ == "__main__":
     app.run()
-
-

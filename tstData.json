@@ -1,0 +1,164 @@
+[
+	{
+		"name": "Weather Channell Headquarters" 
+		,"address": "100 South Marietta Pkwy"
+		,"coordinates": [1,2]
+		,"alertInfo": 
+		{
+			"short": "Severe Thunder Strorm"
+			,"long": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+		,"weatherHours":
+		[
+			{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+		]
+		,"currentHour": 2
+		,"weatherCamLinks" :
+		[
+			{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+		]
+	}
+	,{
+		"name": "Weather Channell Headquarters" 
+		,"address": "100 South Marietta Pkwy"
+		,"coordinates": [1,2]
+		,"alertInfo": 
+		{
+			"short": "Severe Thunder Strorm"
+			,"long": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+		,"weatherHours":
+		[
+			{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+		]
+		,"currentHour": 2
+		,"weatherCamLinks" :
+		[
+			{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+		]
+	}
+	,{
+		"name": "Weather Channell Headquarters" 
+		,"address": "100 South Marietta Pkwy"
+		,"coordinates": [1,2]
+		,"alertInfo": 
+		{
+			"short": "Severe Thunder Strorm"
+			,"long": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+		,"weatherHours":
+		[
+			{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+		]
+		,"currentHour": 2
+		,"weatherCamLinks" :
+		[
+			{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+		]
+	}
+	,{
+		"name": "Weather Channell Headquarters" 
+		,"address": "100 South Marietta Pkwy"
+		,"coordinates": [1,2]
+		,"alertInfo": 
+		{
+			"short": "Severe Thunder Strorm"
+			,"long": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+		,"weatherHours":
+		[
+			{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+		]
+		,"currentHour": 2
+		,"weatherCamLinks" :
+		[
+			{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+		]
+	}
+	,{
+		"name": "Weather Channell Headquarters" 
+		,"address": "100 South Marietta Pkwy"
+		,"coordinates": [1,2]
+		,"alertInfo": 
+		{
+			"short": "Severe Thunder Strorm"
+			,"long": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+		,"weatherHours":
+		[
+			{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+		]
+		,"currentHour": 2
+		,"weatherCamLinks" :
+		[
+			{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+		]
+	}
+	,{
+		"name": "Weather Channell Headquarters" 
+		,"address": "100 South Marietta Pkwy"
+		,"coordinates": [1,2]
+		,"alertInfo": 
+		{
+			"short": "Severe Thunder Strorm"
+			,"long": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+		,"weatherHours":
+		[
+			{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+			,{"hour": 0, "iconPath":"static/img/twc_icons/27.png" }
+		]
+		,"currentHour": 2
+		,"weatherCamLinks" :
+		[
+			{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+			,{"href": "http://www.wunderground.com/webcams/LakeLanierSC/1/show.html", "linkText": "Example Weather Cam Link"}
+		]
+	}
+]
