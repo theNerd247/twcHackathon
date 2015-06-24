@@ -7,6 +7,12 @@ import UserDAO
 app = Flask(__name__)
 app.debug = True
 
+connection_string = "mongodb://localhost"
+connection = pymongo.MongoClient(connection_string)
+database = connection.blog
+
+users = userDAO.UserDAO(database)
+places = PlacesDAO.PlacesDAO(database)
 
 @app.route("/")
 def app_endpoint():
@@ -25,19 +31,16 @@ def get_notes():
         notes.append(n.__dict__)
         return json.dumps(notes)
 
-@app.route("/getPlace")
-def get_place():
-	pass
+@app.route("/getPlace/<username>")
+def get_place(username):
+    print "fetching places for " + username
+    return places.getPlaces(username);
 
 @app.route("/getAlerts/<user_id>")
 def get_alerts_for_user(user_id):
-	pass
+    pass
 
 if __name__ == "__main__":
     app.run()
 
-connection_string = "mongodb://localhost"
-connection = pymongo.MongoClient(connection_string)
-database = connection.blog
 
-users = userDAO.UserDAO(database
