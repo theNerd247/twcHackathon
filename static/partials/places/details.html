@@ -1,6 +1,9 @@
 <!-- the horizontal scrolling row of hourly weather info -->
 <div class="row" >
 	<!-- ******************** Hourly Weather Info ******************** -->
+	<div class='container-fluid'>
+		<h3>Four Day Forcast</h3>
+	</div>
 	<div ng-repeat="weatherHour in currentPlace.weatherHours">
 		<div class='col-xs-3'>
 			<div class='center-text'>
@@ -13,22 +16,27 @@
 <!-- /Hourly Weather Info -->
 <!-- ******************** Alert Information ******************** -->
 <div class='row'>
-	<!-- the alert information if any -->
-	<h2>Alert: {{currentPlace.alertInfo.short}}</h2>
-	<p>
-		{{currentPlace.alertInfo.long}}
-	</p>
+	<div class='col-xs-12'>
+		<!-- the alert information if any -->
+		<div class='alert alert-danger'>
+			<h1>Alert: {{currentPlace.alertInfo.short}}</h1>
+			<p> {{currentPlace.alertInfo.long}} </p>
+			<button class="btn btn-danger" type="button">Take Action!</button>
+		</div>
+	</div>
 	<!-- the webcam -->
 </div>
 <!-- /Alert Information -->
-<!-- ******************** Event Planner ******************** -->
-<!-- /Event Planner -->
+<hr/>
 <!-- ******************** Weather Cam Links ******************** -->
 <div class='row'>
-	<div ng-repeat="camLink in currentPlace.weatherCamLinks">
-		<ul>
-			<li><a href="{{camLink.href}}">{{camLink.linkText}}</a></li>
-		</ul>
+	<div class='container-fluid'>
+		<h1>Weather Station Webcams</h1>
+		<div class='center-block-inline'>
+			<div ng-repeat="camLink in currentPlace.weatherCamLinks">
+				<div class="small-padding"><a class="btn btn-primary" href="{{camLink.href}}">{{camLink.linkText}}</a></div>
+			</div>
+		</div>
 	</div>
 </div>
 <!-- /Weather Cam Links -->

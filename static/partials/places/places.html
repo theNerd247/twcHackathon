@@ -1,6 +1,11 @@
 <div class='row'>
 	<div ng-controller="placesController">
 		<div class='col-md-12'>
+			<div class='row bottom-border'>
+				<button class="close small-padding">
+					+
+				</button>
+			</div>
 			<!-- place item in the places menu --!>
 			<div ng-repeat="place in places">
 				<div class="row bottom-border" ng-click="displayDetails($index)">
