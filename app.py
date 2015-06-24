@@ -18,14 +18,14 @@ users = UserDAO.UserDAO(database)
 places = PlacesDAO.PlacesDAO(database)
 
 # send in some test data
-#pl = Place.Place();
-#pl.name = "Weather Channell Headquarters"
-#pl.address = "100 South Marietta Pkwy"
-#pl.coordinates = [(1,2)]
-#pl.id = "foo"
-#pl.icon = "nowhere"
-#places.addPlace("bob",pl)
-#print pl.__dict__
+pl = Place.Place();
+pl.name = "Weather Channell Headquarters"
+pl.address = "100 South Marietta Pkwy"
+pl.coordinates = [(1,2)]
+pl.id = "foo"
+pl.iconPath = "static/img/twc_icons/30.png"
+places.addPlace("bob",pl)
+print pl.__dict__
 
 @app.route("/")
 def app_endpoint():

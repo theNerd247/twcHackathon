@@ -19,8 +19,8 @@ var app = angular.module('AngularFlask').controller('snip', ['$scope', '$http', 
 		alert(argument);  };
 }]);
 
-app.controller('placesController',['$scope','$http','$parentScope', function($scope,$http,$parentScope){
-	var uname = '/getPlace/' + $parentScope.username
+app.controller('placesController',['$scope','$http',function($scope,$http){
+	var uname = '/getPlace/bob'; //+ $parentScope.username
 	$http.get(uname).success(function(data, status, headers, config) {
 		// this callback will be called asynchronously
 		// when the response is available
