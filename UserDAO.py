@@ -87,3 +87,5 @@ class UserDAO:
            print "oops, mongo error"
            return False
        except pymongo.errors.DuplicateKeyError as e:
+            print "error"
+            return False
